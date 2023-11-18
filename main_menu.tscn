@@ -1,0 +1,178 @@
+[gd_scene load_steps=12 format=3 uid="uid://2xj4873e0tyu"]
+
+[ext_resource type="Texture2D" uid="uid://choj0y4d26wvn" path="res://TitleScreen/country-platform-files/country-platform-files/layers/country-platform-back.png" id="1_4vi0p"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_jg6n5"]
+[ext_resource type="Texture2D" uid="uid://dwg4mwhr1xsx0" path="res://TitleScreen/country-platform-files/country-platform-files/layers/country-platform-forest.png" id="2_fec1q"]
+[ext_resource type="Texture2D" uid="uid://drbyqjrdqmt26" path="res://TitleScreen/country-platform-files/country-platform-files/layers/country-platform-tiles-example.png" id="3_3hdb5"]
+[ext_resource type="Texture2D" uid="uid://bytm1bqdnwhk3" path="res://TitleScreen/country-platform-files/country-platform-files/layers/country-platform-tileset.png" id="4_nqtff"]
+[ext_resource type="Texture2D" uid="uid://c6yqtqnu6nkcn" path="res://TitleScreen/illumimath logo sample.png" id="5_chaxy"]
+[ext_resource type="FontFile" uid="uid://vf2tn73h2dt3" path="res://TitleScreen/font/public-pixel-font/PublicPixel-z84yD.ttf" id="6_tr503"]
+[ext_resource type="Script" path="res://NewGameButton.gd" id="9_iuyrs"]
+
+[sub_resource type="Animation" id="Animation_gnwy2"]
+resource_name = "fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_lfbi4"]
+resource_name = "fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4t4te"]
+_data = {
+"fade_in": SubResource("Animation_gnwy2"),
+"fade_out": SubResource("Animation_lfbi4")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jg6n5")
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="FirstLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Sky" type="Sprite2D" parent="Background/FirstLayer"]
+texture_filter = 1
+scale = Vector2(3, 2.89732)
+texture = ExtResource("1_4vi0p")
+centered = false
+
+[node name="SecondLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Forest" type="Sprite2D" parent="Background/SecondLayer"]
+texture_filter = 1
+position = Vector2(0, 35)
+scale = Vector2(7.2, 2.73661)
+texture = ExtResource("2_fec1q")
+centered = false
+
+[node name="ThirdLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Platform" type="Sprite2D" parent="Background/ThirdLayer"]
+texture_filter = 1
+position = Vector2(104, 1)
+scale = Vector2(3, 2.89732)
+texture = ExtResource("3_3hdb5")
+centered = false
+
+[node name="FourtLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Platform2" type="Sprite2D" parent="Background/FourtLayer"]
+texture_filter = 1
+position = Vector2(-322, 188)
+scale = Vector2(3, 2.89732)
+texture = ExtResource("4_nqtff")
+centered = false
+
+[node name="Menu" type="VBoxContainer" parent="Background"]
+offset_left = 150.0
+offset_top = 180.0
+offset_right = 508.0
+offset_bottom = 521.0
+scale = Vector2(0.996756, 0.997132)
+
+[node name="TitleLogo" type="TextureRect" parent="Background/Menu"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("5_chaxy")
+expand_mode = 5
+
+[node name="NewGameButton" type="Button" parent="Background/Menu"]
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_tr503")
+theme_override_font_sizes/font_size = 25
+text = "New Game"
+flat = true
+script = ExtResource("9_iuyrs")
+
+[node name="LoadGameButton" type="Button" parent="Background/Menu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_tr503")
+theme_override_font_sizes/font_size = 25
+text = "Load Game"
+flat = true
+
+[node name="Settings" type="Button" parent="Background/Menu"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_tr503")
+theme_override_font_sizes/font_size = 25
+text = "Settings
+"
+flat = true
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4t4te")
+}
+
+[node name="ColorRect" type="ColorRect" parent="Transition"]
+visible = false
+self_modulate = Color(0.35, 0.35, 0.35, 0.65)
+offset_right = 1161.0
+offset_bottom = 654.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="Background/Menu/NewGameButton" to="." method="_on_new_game_button_pressed"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]

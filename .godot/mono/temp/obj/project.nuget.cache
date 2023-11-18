@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "l2vqXOlX/vLubhSabDuZd14QGm6RzyZP4UqR8uLhrx/I6eKlbZpad9PDxaRN5xbNgSaP2jgmqFtBxvK25245Xg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Elieza Jen\\Desktop\\PROJECT_ILLUMIMATH_G4\\PROJECT- Illumimath_G4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elieza Jen\\.nuget\\packages\\godot.sourcegenerators\\4.1.3\\godot.sourcegenerators.4.1.3.nupkg.sha512",
+    "C:\\Users\\Elieza Jen\\.nuget\\packages\\godotsharp\\4.1.3\\godotsharp.4.1.3.nupkg.sha512",
+    "C:\\Users\\Elieza Jen\\.nuget\\packages\\godotsharpeditor\\4.1.3\\godotsharpeditor.4.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}

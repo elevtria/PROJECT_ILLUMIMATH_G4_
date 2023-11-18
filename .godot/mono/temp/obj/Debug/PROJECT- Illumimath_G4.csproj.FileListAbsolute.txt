@@ -1,0 +1,17 @@
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\PROJECT- Illumimath_G4.deps.json
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\PROJECT- Illumimath_G4.runtimeconfig.json
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\PROJECT- Illumimath_G4.dll
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\PROJECT- Illumimath_G4.pdb
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.csproj.AssemblyReference.cache
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.AssemblyInfoInputs.cache
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.AssemblyInfo.cs
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.csproj.CoreCompileInputs.cache
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.csproj.CopyComplete
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.dll
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\refint\PROJECT- Illumimath_G4.dll
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.pdb
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\PROJECT- Illumimath_G4.genruntimeconfig.cache
+C:\Users\Elieza Jen\Desktop\PROJECT_ILLUMIMATH_G4\.godot\mono\temp\obj\Debug\ref\PROJECT- Illumimath_G4.dll

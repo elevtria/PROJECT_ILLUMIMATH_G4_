@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bonuygjlagox0"]
+
+[ext_resource type="FontFile" uid="uid://gr0hrf7xcu4n" path="res://Fonts/arcadeclassic/ARCADECLASSIC.TTF" id="1_gup6w"]
+[ext_resource type="Script" path="res://loading_screen.gd" id="1_u3shn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wbr0e"]
+modulate_color = Color(0.0980392, 0.0980392, 0.439216, 1)
+
+[node name="Loading Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u3shn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1161.0
+offset_bottom = 656.0
+color = Color(0, 0, 0, 1)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 341.0
+offset_top = 305.0
+offset_right = 855.0
+offset_bottom = 387.0
+theme_override_fonts/font = ExtResource("1_gup6w")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/background = SubResource("StyleBoxTexture_wbr0e")
+step = 0.1

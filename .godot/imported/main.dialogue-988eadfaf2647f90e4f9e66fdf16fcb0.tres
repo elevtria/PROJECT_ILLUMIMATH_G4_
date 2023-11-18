@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6pwsr"]
+
+[resource]
+script = ExtResource("1_6pwsr")
+using_states = PackedStringArray()
+titles = {
+"this_is_a_node_title": "3"
+}
+character_names = PackedStringArray("_____", "Teacher")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "this_is_a_node_title",
+"type": "title"
+},
+"3": {
+"character": "_____",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"tags": PackedStringArray(),
+"text": "Oh my goodness, what should I do?! I didn’t review for our math exam! I was so invested in the newly released game on my computer, that I didn’t even notice the time!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh my goodness, what should I do?! I didn’t review for our math exam! I was so invested in the newly released game on my computer, that I didn’t even notice the time!",
+"type": "dialogue"
+},
+"4": {
+"character": "Teacher",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "Okay, students, please pack all your notes, mobile phones, anything except for your pens. We will now start the exam for your…….math subject.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Okay, students, please pack all your notes, mobile phones, anything except for your pens. We will now start the exam for your…….math subject.",
+"type": "dialogue"
+},
+"5": {
+"character": "_____",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "I am doomed!!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I am doomed!!",
+"type": "dialogue"
+},
+"7": {
+"id": "7",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.29.0"

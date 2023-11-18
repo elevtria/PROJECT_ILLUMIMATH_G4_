@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwxi4borsk7rb"]
+
+[ext_resource type="Texture2D" uid="uid://dqk6ipuib5jcp" path="res://Scene1/bg/classroom bg.jpg" id="1_nhunc"]
+[ext_resource type="Script" path="res://scene_1.gd" id="1_ygdpe"]
+
+[node name="Scene1" type="Node2D"]
+script = ExtResource("1_ygdpe")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 2.0
+offset_top = -73.0
+offset_right = 1282.0
+offset_bottom = 738.0
+texture = ExtResource("1_nhunc")
